@@ -12,7 +12,7 @@ gem 'guard-rspec', '1.2.1'
 gem 'guard-spork', '1.2.0'
 gem 'spork', '0.9.2'
 end
-	
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.5'
   gem 'coffee-rails', '~> 3.2.2'
