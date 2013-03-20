@@ -44,6 +44,7 @@ describe "when name is too long" do
 	it {should_not be_valid}
 end
 
+
 describe "when email format is invalid" do
 	it "should be invalid" do
 		addresses = %w[user@foo,com user_at_foo.org example.user@foo.foo@bar_baz.com foo@bar+baz.com]
@@ -74,7 +75,7 @@ describe "when password is not present" do
 	before {@user.password= @user.password_confirmation = " "}
 	it {should_not be_valid}
 end
-	
+
 describe "when password doesn't match confirmation" do
 	before {@user.password_confirmation = "mismatch"}
 	it {should_not be_valid}
